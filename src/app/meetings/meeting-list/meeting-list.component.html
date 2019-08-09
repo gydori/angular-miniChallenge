@@ -1,0 +1,6 @@
+<h1>Meeting list</h1>
+<br />
+<span *ngFor="let mr of meetingRooms"> {{ mr.name }}<br /> </span>
+<span *ngFor="let meeting of meetings">
+  <app-meeting [model]="meeting"></app-meeting>
+</span>
